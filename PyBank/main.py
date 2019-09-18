@@ -5,6 +5,8 @@
 #    ProfileLoss Change derivation logic was not correct.
 #            : 09/17/2019
 #     Changed script name to main.py
+#            : 09/17/2019
+#     Changed out file from csv to txt
 #Referances : 
 #   1. for writing into txt file
 #       https://www.geeksforgeeks.org/reading-writing-text-files-python/
@@ -46,7 +48,7 @@ with open(dBudget, newline='', encoding="utf8") as budgetFile:
         #storing profileAndLoss value for next comparison
         oldProfitAndLoss = int(myRow[1])
 
-outPath = os.path.join("D:/MyWork/GeorgiaTech/ClassesWork/3_HomeWork-Python/python-challenge/PyBank", "budgetDataOutput.csv")
+outPath = os.path.join("D:/MyWork/GeorgiaTech/ClassesWork/3_HomeWork-Python/python-challenge/PyBank", "budgetDataOutput.txt")
 #opening file in write mode
 outFile = open(outPath, "w+")
 

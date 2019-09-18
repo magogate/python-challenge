@@ -1,6 +1,8 @@
 ###########################################
 #Created By : Mandar R. Gogate
 #Created On : 09/17/2019
+#Modified On : 09/17/2019
+#           Changed out file from csv to txt
 #Combined both scripts in a single file
 #Referances : 
 #   1. for writing into txt file
@@ -52,7 +54,7 @@ def processBudgetData():
             #storing profileAndLoss value for next comparison
             oldProfitAndLoss = int(myRow[1])
 
-    outPath = os.path.join("D:/MyWork/GeorgiaTech/ClassesWork/3_HomeWork-Python/python-challenge/PyBank", "budgetDataOutput.csv")
+    outPath = os.path.join("D:/MyWork/GeorgiaTech/ClassesWork/3_HomeWork-Python/python-challenge/PyBank", "budgetDataOutput.txt")
     #opening file in write mode
     outFile = open(outPath, "w+")
 
@@ -92,7 +94,7 @@ def processElectionData():
             #if key exists, increment the vote count 
                 electionDict[myKey] = electionDict.get(myKey) + 1
 
-    outPath = os.path.join("D:/MyWork/GeorgiaTech/ClassesWork/3_HomeWork-Python/python-challenge/PyPoll", "electionOutput.csv")
+    outPath = os.path.join("D:/MyWork/GeorgiaTech/ClassesWork/3_HomeWork-Python/python-challenge/PyPoll", "electionOutput.txt")
 
     #opening file in write mode
     outFile = open(outPath, "w+")
